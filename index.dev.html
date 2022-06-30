@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en" class="noJs">
+	<head>
+		<title>IBM Video Streaming</title>
+
+		<meta charset="utf-8">
+		<meta name="viewport" content="width=device-width, initial-scale=1">
+		<meta name="description" content="Ustream.Tv: Live streaming and video" />
+
+		<link rel="stylesheet" type="text/css" href="/css/embed.css" />
+		<link rel="stylesheet" type="text/css" href="/css/ui.css" />
+
+		<!-- inject-exposed-vars -->
+	</head>
+
+	<body id="Embed_Index2" class="lang-en-US" data-layout="embed">
+		<div id="PlayerOne" class="ui-hidden">
+			<div id="EmbedViewer" >
+				<div id="Loading" class="loading hidden"><div></div></div>
+				<div id="ViewerContainer" class="viewer"></div>
+				<div class="cover"></div>
+			</div>
+			<div id="ComponentsContainer"></div>
+			<div id="ScreensContainer"></div>
+			<div id="OverlaysContainer"></div>
+			<span class="is-retina"></span>
+			<iframe id="CorsFrame"
+				data-src="https://ustream.tv/corsCommunicatorFrameDirect"
+				width="0"
+				height="0">
+			</iframe>
+		</div>
+
+		<script type="text/javascript" src="/js/ustream-player.js"></script>
+		<script type="text/javascript">
+			window.ustreamPlayer.initialize();
+		</script>
+	</body>
+</html>
